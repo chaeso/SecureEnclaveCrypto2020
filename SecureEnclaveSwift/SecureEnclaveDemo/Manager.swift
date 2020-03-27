@@ -68,9 +68,15 @@ final class Manager {
         
         if let publicKeyRef = try? helper.getPublicKey(), let privateKey = try? helper.getPrivateKey() {
             
+            print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n")
+            print("Use Generated Key Reference!!")
+            
             return (public: publicKeyRef, private: privateKey)
         }
         else {
+            
+            print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n")
+            print("Not Found! Let's Generate Key")
             
             let accessControl = try helper.accessControl(with: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly)
             let keypairResult = try helper.generateKeyPair(accessControl: accessControl)

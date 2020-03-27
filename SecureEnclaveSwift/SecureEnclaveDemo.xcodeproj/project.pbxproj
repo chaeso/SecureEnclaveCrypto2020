@@ -154,7 +154,7 @@
 				TargetAttributes = {
 					A33017C61DD9B64800FF32E3 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 33KVL2LY9J;
+						DevelopmentTeam = 5R56P39UB6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -174,6 +174,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -357,13 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33KVL2LY9J;
+				DEVELOPMENT_TEAM = 5R56P39UB6;
 				INFOPLIST_FILE = SecureEnclaveDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.agens.SecureEnclaveDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.chaeso.secureEnclave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -371,13 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33KVL2LY9J;
+				DEVELOPMENT_TEAM = 5R56P39UB6;
 				INFOPLIST_FILE = SecureEnclaveDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.agens.SecureEnclaveDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = sk.chaeso.secureEnclave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

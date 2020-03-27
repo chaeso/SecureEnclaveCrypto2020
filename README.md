@@ -6,7 +6,7 @@ SecureEnclaveCrypto
 This project shows you how to
 - create a keypair where as the private key is stored in the secure enclave
 - sign a string / some data with the private key
-- use the security functions like SecKeyRawVerify, SecKeyGeneratePair and SecItemCopyMatching in Swift 3 and Objective-C
+- use the security functions like SecKeyRawVerify, SecKeyGeneratePair and SecItemCopyMatching in Swift 5 and Objective-C
 - store the public key in the keychain
 
 Apple quietly released a new API in iOS 9 (`kSecAttrTokenIDSecureEnclave`) that allowed developers to create and use keys stored directly in the Secure Enclave (see "[Security and Your Apps](https://developer.apple.com/videos/play/wwdc2015/706/)" starting from slide 195). This feature opens enormous possibilities for security by enabling applications to use private keys that are safely stored outside of iOS and away from any potential malware.

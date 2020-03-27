@@ -55,6 +55,22 @@ class ViewController: UIViewController {
             signatureTextField.text = "Error occured. See console."
         }
     }
+    
+    @IBAction func letsEncrypt(_ sender: Any) {
+        do {
+            
+            let input = inputTextField.text?.data(using: .utf8) ?? Data()
+            let cipher = try Manager.shared.encrypt(input)
+            let cipherAsHex = cipher.map { String(format: "%02hhx", $0) }.joined()
+            signatureTextField.text = cipherAsHex
+            print("Encrypt \(cipherAsHex)")
+        }
+        catch let error {
+            
+            print("Error \(error)")
+            signatureTextField.text = "Error occured. See console."
+        }
+    }
 
     @IBAction func regenerateKeypair(_ sender: Any) {
         
